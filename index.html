@@ -12,12 +12,139 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<style media="print">
+			* {
+				color: rgba(0, 0, 0, 0.9) !important
+			}			
+		</style>
+		<style>
+			.logo{
+				background-color: rgb(111, 112, 112); 
+				vertical-align: middle;
+			}
+			img[alt=yo] {
+				width: 200px;
+				border: none;
+				background: none;
+			}
+			img[alt=baas],img[alt=faas] {
+				width: 300px;}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-timing="1">
+					<img src="/assets/logos/serverless-logo-ponencia.jpg"
+						alt="logo ponencia">
+				</section>
+				<section>
+					<h3>Hola 👋, Soy Jose</h3>
+					<img src="https://avatars.githubusercontent.com/u/24436751?v=4" width="200" />
+					<img src="https://github-readme-stats.vercel.app/api/top-langs?username=josemasf&show_icons=true&locale=en&layout=compact"
+						alt="josemasf" />
+					<table >
+						<tr>
+							<td style="text-align: center;">10 años</td>
+							<td style="text-align: center;">1 año</td>
+							<td style="text-align: center;">4 años</td>
+						</tr>
+						<tr>
+							<td class="logo">
+								<img src="/assets/logos/logo-vista.png" width="200" />
+							</td>
+							<td class="logo">
+								<img
+									src="/assets/logos/logo-ofg.png"width="200" />
+							</td>
+							<td class="logo">
+								<img
+									src="/assets/logos/logo-inno.png" width="150">
+							</td>
+						</tr>					
+					</table>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## Evolución de infraestructura en IT							
+						</script>
+					</section>
+
+					<section data-auto-animate>
+						<img src="/assets/logos/logo-vista.png" width="200" />
+					</section>
+					<section data-auto-animate>
+						<img src="/assets/logos/logo-vista.png" width="200" />
+						<img src="/assets/logos/logo-ofg.png"width="200" />
+					</section>						
+					
+				</section>
+				
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## Serverless
+	
+							Serverless computing es un modelo de ejecución de computación en la nube en el que el proveedor de los servicios en la nube destina por demanda recursos de las máquinas virtuales, cuidando de los servidores por sus clientes. [Wikipedia](https://es.wikipedia.org/wiki/Serverless_computing)
+							
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							| Bakend as a service | Function as a service |
+							|--|--:|
+							| (BASS) | (FASS) |
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## Backend as a service (BaaS)
+	
+							- AWS lleva ofreciendolo desde hace más de 10 años
+							- AWS S3 fue el primer BaaS
+							- Similar a SaaS (Software as a service)
+							
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Ejemplos BaaS
+	
+							![baas](/assets/logos/baas/algolia.png)
+							![baas](/assets/logos/baas/aws-dynamodb.png)
+							![baas](/assets/logos/baas/firebase.png)							
+							![baas](/assets/logos/baas/notion.jpg)
+							![baas](/assets/logos/baas/supabase.png)
+							![baas](/assets/logos/baas/airtable.png)
+							
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Function as a service (FaaS)
+	
+							- Se popularizó en 2014 con AWS Lambda
+							- Evolución en ejecución y diseño de Apps
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Ejemplos FaaS
+	
+							![faas](/assets/logos/faas/aws-lambda.png)
+							![faas](/assets/logos/faas/azure-functions.png)
+							![faas](/assets/logos/faas/google-cloud-functions.png)
+							![faas](/assets/logos/faas/IBM-Cloud-Functions.png)
+							
+						</script>
+					</section>
+				</section>
 			</div>
 		</div>
 
