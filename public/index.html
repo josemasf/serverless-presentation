@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/night.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<img src="https://www.spec-india.com/wp-content/uploads/2019/12/Micro_Frontend-2-768x422.png"
+					alt="logo ponencia">
+			</section>
+			<section>
+				<section data-markdown>
+					<script type="text/template">
+						## MICROSERVICIOS
+
+						La arquitectura de microservicios [...] consiste en construir una aplicación como un conjunto de **pequeños servicios**, los cuales se ejecutan en su propio proceso y se comunican con mecanismos ligeros (normalmente una API de recursos HTTP) [Wikipedia](https://es.wikipedia.org/wiki/Arquitectura_de_microservicios)
+						
+					</script>
+				</section>
+				<section>
+					<img src="https://miro.medium.com/max/3498/1*xu1Ge_Cew0DHdSU6ETcpLQ.png" alt="microsercio">
+				</section>
+				<section>
+					<ul>
+						<li><b>Modularidad</b> -> se pueden desarrollar y desplegar de forma independiente.</li>
+						<li><b>Escalabilidad </b> -> se puede escalar cada parte según sea necesario.</li>
+						<li><b>Versatilidad</b> -> usar diferentes tecnologías y lenguajes.</li>
+						<li><b>Rapidez de actuación</b> -> desarrollo menos costoso.</li>
+						<li><b>Mantenibilidad</b> -> mejoras independientes.</li>
+						<li><b>Agilidad</b> -> Reusar código de terceros.</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h3>MICROFRONTEND</h3>
+
+					<p>Surge en el 2016 por primera vez</p>
+
+					<p> La idea detrás de Micro Frontends es pensar en un sitio web o aplicación web como una composición de
+						características que son propiedad de equipos independientes. </p>
+
+					<p>Cada equipo tiene un área de negocio definida o misión de la que se preocupa y se especializa. Un
+						equipo es cross functional y desarrolla sus características end-to-end, desde la base de datos hasta
+						la interfaz de usuario.</p>
+
+
+				</section>
+				<section>
+					<h3>Frontends monolíticos</h3>
+					<img src="https://micro-frontends-es.org/ressources/diagrams/organisational/monolith-frontback-microservices.png"
+						alt="mono-1">
+				</section>
+	
+				<section>
+					<h3>Organización vertical Microfrontend</h3>
+					<img src="https://micro-frontends-es.org/ressources/diagrams/organisational/verticals-headline.png"
+						alt="mono-2">
+				</section>
+	
+			</section>
+			
+			<section>
+				<h3>¿Cuándo es recomendable usar esta metodología?</h3>
+				<ul>
+					<li>Grandes aplicaciones</li>
+					<li>Múltiples equipos</li>
+					<li>Tiempos de entraga distintos</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>Beneficios</h3>
+				<ul>
+					<li>A ser más pequeña la aplicación carga más rápido</li>
+					<li>Merge más simples</li>
+					<li>Reducción de conflictos entre Merge de otros equipos</li>
+					<li>Múltiples framework, según el problema. Transparente al cliente</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>¿Cuándo no usar esta metodología?</h3>
+				<ul>
+					<li>Pequeños equipos</li>
+					<li>Cuándo los mircofrontend compliquen el desarrollo</li>
+					<li>Cuando no estemos usando métodos automáticos de desplegue</li>
+					<li>Cuando el equipo sea demasiado junior.</li>
+				</ul>
+			</section>
+
+			<section>
+				<section>
+					<h3>Cómo podemos montar esta arquitectura</h3>
+				</section>
+				<section>
+					<h3>BIT</h3>
+
+					Muy común y con muchas recomendaciones, es de pago.
+
+					<img src="https://miro.medium.com/max/6208/1*V7pkn8njybmOwAC46h-oUA.png" alt="bit">
+
+				</section>
+				<section>
+					<h3>Webpack 5 and Module Federation</h3>
+
+					Mucha gente conoce ya webpack, es dificil de configurar.
+
+				</section>
+				<section>
+					<h3>Single SPA</h3>
+					Dificil de configurar.
+				</section>
+				<section>
+					<h3>Project Mosaic</h3>
+					Es la arquitectura usada y propesta por Zalando
+
+					<img src="https://www.mosaic9.org/images/diagram.png" alt="Mosaic" height="400">
+				</section>
+				<section>
+					<h3>Otros</h3>
+					<ul>
+						<li><b>Systemjs</b></li>
+						<li><b>Piral </b></li>
+						<li><b>Open Components</b></li>
+						<li><b>Qiankun</b> -> basado en single-spa.</li>
+						<li><b>Luigi</b></li>
+						<li><b>FrintJS</b></li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<h3>¿Cúal usaremos en la prueba?</h3>
+			</section>
+
+			<section data-background="#21371b">
+				<h3>Podium</h3>
+				<img src="https://podium-lib.io/img/podium.png" alt="podium">
+			</section>
+
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
