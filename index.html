@@ -453,8 +453,23 @@
 						</div>
 					</section>	
 					<section data-markdown>
+						<script type="text/template">							
+							## Cold and Hot Boots
+							
+							**Arranque en frío:** Cuando una función arranca desde cero.
+
+							**Función cálida:** Cuando se reutiliza.
+
+							Las funciones hacen uso de la caché y utilizan patrón memorize para cálculos costoso.
+
+							>Es importante tener en cuenta que no pueden dejar las tareas en ejecución.	
+							
+						</script>
+					</section>		
+
+					<section data-markdown>
 						<script type="text/template">
-							## Ganado no mascota
+							## Ganado vs mascota
 	
 							![nopet](/assets/slide/nopet.png)							
 							
@@ -606,9 +621,37 @@
 						<script type="text/template">	
 							## Vercel
 							
-							```npx vercel```
+							```vercel init```
 
 							![vercel](/assets/slide/vercel-deploy.png)	
+							
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">	
+							## Vercel Functions
+							
+							1. Deben estar en la carpeta api/
+							2. api/hello.ts === api/hello/index.ts
+							3. api/hello/_name.ts no será accesible
+							4. api/hello/[param] para detalles
+
+							>La versión gratuita está limitada a 10 funciones.
+							
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">	
+							## Vercel Functions
+
+							### Lenguajes soportados
+							
+							1. Node.js (js y ts)
+							2. Go
+							3. Python
+							4. Ruby
+
+							>La versión gratuita está limitada a 10 funciones.
 							
 						</script>
 					</section>
