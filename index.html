@@ -31,6 +31,8 @@
 			}
 			img[alt=baas],img[alt=faas] {
 				width: 300px;}
+			img[alt=supabase_schema] {
+				width: 600px;}
 			
 			img[alt=events]  {
 				width: 100%;
@@ -52,14 +54,25 @@
 				line-height: 30px;
     			display: inline-block;
 			}
+			.intro{				
+				background: rgb(153, 112, 8);
+				padding: 50px ;
+				border-radius: 30px;
+				border: 5px solid rgba(255,188,0,1)
+			}
+			
 		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-timing="1">
-					<img src="/assets/logos/serverless-logo-ponencia.jpg"
-						alt="logo ponencia">
+				<section data-timing="1">			
+					<div class="intro">
+					<h3> <span class="iconify" data-icon="gg:serverless"></span> Serverless</h3>					
+					<h3> <span class="iconify" data-icon="akar-icons:vercel-fill"></span> Vercel</h3>
+					<h3> <span class="iconify" data-icon="simple-icons:supabase"></span> Supabase</h3>
+				</div>		
+
 				</section>
 				<section>
 					<h3>Hola 👋, Soy Jose</h3>
@@ -99,6 +112,8 @@
 					4. Casos de uso reales con código
 						- Alexa Skill 🤖
 						- App Svelte 'Taco' 🌮
+					5. Supabase
+						- App Svelte Bulma Login 🔒
 					</section>
 				</section>
 
@@ -698,6 +713,90 @@
 						</script>
 					</section>
 				</section>
+				<section>
+					<section data-markdown>
+					<script type="text/template">						
+						![supabase](/assets/logos/baas/supabase.png)
+						
+						### The Open Source Firebase Alternative
+						
+					</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">						
+						### Supabase
+
+						Create a backend in less than 2 minutes. Start your project with: 
+						
+						- Postgres Database
+						- Authentication
+						- Instant APIs
+						- Realtime subscriptions 
+						- Storage.
+
+						Serverless functions coming soon
+						</script>				
+					</section>
+					<section  data-markdown>
+						<script type="text/template">	
+						## Supabase CLI
+						
+						- Para desarrollo en local.
+						- Docker con los servicios.
+						- Gestor de migraciones.
+						- Publicar los cambios locales a producción							
+						</script>
+					</section>
+					<section  data-markdown>
+						<script type="text/template">	
+							### Supabase Schema
+							
+							![supabase_schema](/assets/slide/supbase_schema.png)
+							
+							<a href="https://supabase-schema.vercel.app/" target="_blank">Supabase schema</a>
+							
+						</script>
+					</section>
+					<section  data-markdown>
+						<script type="text/template">	
+						## Supabase + Bulma + Svelte
+						
+						<ul>							
+						- Crear una proyecto Supabase
+						- Crear una tabla
+						- Registar y listar datos de la tabla
+						- Sistema de login
+						</ul>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+						### Veamos código
+
+						<a href="https://github.com/josemasf/supabase-bulma-demo" target="_blank">Github</a>
+						</script>
+					</section>					
+			</section>
+			<section data-markdown>
+				<script type="text/template">
+				### Recursos
+
+				
+				 - <a href="https://www.youtube.com/watch?v=vxJobGtqKVM" target="_blank">What is Serverless?</a>
+				 - <a href="https://www.youtube.com/watch?v=1bLWSsocsxI" target="_blank">Introducción a Serverless con Python.</a>
+				 - <a href="https://www.youtube.com/watch?v=YPc5ulMR6VI" target="_blank">Qué es Serverless? | Serverless en español | #2</a>
+				 - <a href="https://www.youtube.com/watch?v=xPLrHMGYpq4" target="_blank">Make a Simple API Endpoint with Vercel Serverless Functions in under 20 minutes</a>
+				 - <a href="https://www.youtube.com/watch?v=yBGLw_eITfY" target="_blank">Serverless Patterns You HAVE To Know About - Part 1</a>
+				
+				</script>
+			</section>
+
+			<section>
+				<h2>Muchas gracias por vuestra atención</h2>
+				<h2>👏👏👏👏</h2>
+			</section>
+					
+				
 			</div>
 		</div>
 		<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
@@ -705,6 +804,7 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
